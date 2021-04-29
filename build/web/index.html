@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Play My Song</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="funcoes.js" type="text/javascript"></script>
+        <link href="estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="main-bg">
+        <div  class="login-container text-c animated flipInX">
+                <div>
+                    <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
+                </div>
+                    <h3 class="text-whitesmoke">Registrar Música</h3>
+                    <p class="text-whitesmoke"></p>
+                <div class="container-content">
+                    <form class="margin-t" onsubmit="GravaDadosFoto()" id="fdados" method="POST" name="fdados" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="musica" id="musica" class="form-control" placeholder="Nome da Música" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="cantor" id="cantor" class="form-control" placeholder="Cantor/Banda" value="">
+                        </div><br>
+                        <div class="form-group">
+                            <input type="radio" id="Sertanejo" name="Gen" value="Sertanejo" checked>
+                            <label for="nome" style="color:whitesmoke">Sertanejo</label>
+                            <input type="radio" id="Pagode" name="Gen" value="Pagode">
+                            <label for="nome" style="color:whitesmoke">Pagode</label>
+                            <input type="radio" id="TecnoBrega" name="Gen" value="Tecnobrega">
+                            <label for="nome" style="color:whitesmoke">Tecnobrega</label>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="foto" style="color:whitesmoke">Arquivo da Música:</label>
+                                <input class="form-control" type="file" id="foto" name="foto"
+                                    accept=".mp3">
+                        </div><br>
+                        <button type="submit" class="form-button button-l margin-b">Resgistrar Música</button>
+                        <a class="form-button button-l margin-b" href="Pagina_Musicas.html">Ouvir Músicas</a>
+                    </form>
+                    <div class="margin-t text-whitesmoke" id="resultado"></div>
+                </div>
+        </div>
+    </body>
+</html>

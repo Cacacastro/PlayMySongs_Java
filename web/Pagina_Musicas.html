@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play My Song</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="funcoes.js" type="text/javascript"></script>
+        <link href="estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="main-bg">
+        <div  class="login-container text-c animated flipInX">
+                <div>
+                    <h1 class="logo-badge text-whitesmoke"><span class="fa fa-user-circle"></span></h1>
+                </div>
+                    <h3 class="text-whitesmoke">Ouvir músicas</h3>
+                    <p class="text-whitesmoke"></p>
+                <div class="container-content">
+                    <form class="margin-t" onsubmit="mostraMusica(this)" id="fdados" method="POST" name="fdados" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="musica" id="musica" class="form-control" placeholder="Nome da Música, Cantor ou Estilo Musical" value="">
+                        </div>
+                        <button type="submit" class="form-button button-l margin-b">Pesquisar</button>
+                        <a class="form-button button-l margin-b" href="index.html">Registrar musicas</a>
+                    </form>
+                    
+                    <p id="resultado"></p>
+                </div>
+        </div>
+    </body>
+</html>
